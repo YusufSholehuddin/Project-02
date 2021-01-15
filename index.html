@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Scroll reveal Js -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Project 4 | Yusuf Sholehuddin</title>
+</head>
+<body>
+    
+    <section class="sec">
+        <header>
+            <a href="#" class="navbar-brand">[YS]</a>
+            <ul class="navbar">
+                <li class="navbar-item">
+                    <a href="" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="" class="navbar-link">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="" class="navbar-link">Product</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="" class="navbar-link">Blog</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="" class="navbar-link">Contact</a>
+                </li>
+            </ul>
+        </header>
+        <div class="border-category">
+            <ul class="category">
+                <li class="category-item">
+                    <a href="#">Seafood</a>
+                </li>
+                <li class="category-item">
+                    <a href="#">Darat Food</a>
+                </li>
+                <li class="category-item">
+                    <a href="#">Vegetarian</a>
+                </li>
+                <li class="category-item">
+                    <a href="#">Minuman Manis / Asem</a>
+                </li>
+                <li class="category-item">
+                    <a href="#">Minuman Alkohol</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's Me</h2>
+                <h2 class="textSpan"><span>Nasi Goreng</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit blanditiis praesentium vero necessitatibus qui vel reprehenderit fugiat architecto inventore autem. Alias, doloremque nulla cumque odio ad a perferendis amet nisi.</p>
+                <a href="#">Selengkapnya</a>
+            </div>
+            <div class="imgBox">
+                <img class="awal" src="img/nasiGoreng1.png" alt="NasiGoreng1" width="500">
+            </div>
+        </div>
+        <ul class="thumbs">
+            <li class="thumbs-item">
+                <img src="img/rendang1.png" alt="" width="80" onclick="imgSlider('img/rendang1.png');changeBG('#2c3e50');changeText('Rendang Kecap')">
+            </li>
+            <li class="thumbs-item">
+                <img src="img/Opor.png" alt="" width="80"onclick="imgSlider('img/Opor.png');changeBG('#e67e22');changeText('Opor Ayam')">
+            </li>
+            <li class="thumbs-item">
+                <img class="awal" src="img/nasiGoreng1.png" alt="NasiGoreng1"onclick="imgSlider('img/nasiGoreng1.png');changeBG('#2ecc71');changeText('Nasi Goreng')">
+            </li>
+        </ul>
+    </section>
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.awal').src = anything;
+        }
+        function changeBG(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background= color;
+        }
+        function changeText(span){
+            const text = document.querySelector('span');
+            text.innerHTML = span;
+        }
+    </script>
+</body>
+</html>
